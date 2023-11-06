@@ -1,0 +1,796 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'segoe ui light';
+    scroll-behavior: smooth;
+}
+a
+{
+    text-decoration: none;
+    color: white;
+}
+.home
+{
+    background:url(../images/hero\ img.jpg) rgba(0, 0, 0,0.8);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    text-align: center;
+    overflow: auto;
+}
+.overlay
+{
+    background-color: rgba(0, 0, 0,0.8);
+    width: 100%;
+    height: 100vh;
+}
+.hello
+{
+    color: white;
+    width: 100%;
+    margin-top: 15%;
+    
+    
+}
+.hello .anim 
+{
+    color: var(--main-color);
+    font-size: 30px;
+    width: 418px;
+    margin: 30px auto;
+    border-right: 2px solid white;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: control-width 3s  infinite ;
+}
+@keyframes control-width {
+    from {
+    width: 0;
+    }
+    to {
+    width: 418px;
+    }
+    
+}
+.hello h1 h3
+{
+    margin: 15;
+}
+.hello h1 
+{
+    color: rgb(255, 48, 91);
+    font-weight: 700;
+    font-size:70px;
+}
+.hello h3
+{
+    
+    font-weight: 400;
+    font-size:25px;
+}
+.nav
+{
+    width: 100%;
+    /* background-color: aqua; */
+    padding: 20;
+    transition:
+    cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.logo a
+{
+
+    float: left;
+    padding-left:12% ;
+    font-size: 30;
+    font-weight: 600;
+    color: rgb(255, 48, 91);
+
+}
+.navli ul
+{
+    color: white;
+    float: right;
+    width: 40%;
+}
+.clear
+{
+    clear: both;
+}
+li
+{
+    list-style: none;
+}
+.navli ul li{
+    float: left;
+    /* font-size: 1; */
+    margin: 0 2%;
+}
+.navli span{
+    color: rgb(255, 48, 91);
+}
+.parent1
+{
+    width: 100%;
+    padding: 7% 0  ;
+    overflow: hidden;
+    
+}
+.aboutcontent span
+{
+    color: rgb(255, 48, 91);
+}
+.aboutph
+{
+    width: 30%;
+    float: left;
+    margin-left: 14%;
+    vertical-align: middle;
+    padding-left: 50px;
+    padding-top: 20px;
+    overflow: hidden;
+
+}
+.square {
+    width: 100%; 
+    height: 53vh; 
+    border: 10px solid rgb(85, 85, 85);
+    border-radius: 7px; 
+
+    position: absolute;
+    top: -20px;
+    left: -25px;
+    z-index: 1;
+}
+.imgparent
+{
+    width: 80%;   
+    position: relative;
+    
+}
+.aboutph img
+{
+    width: 100%;
+    height: 53vh;
+    border-radius: 7px;
+    position: relative;
+    z-index: 2;
+    
+    
+}
+.over
+{
+    background-color: rgba(0, 0, 0,0.5);
+    width: 100%;
+    height: 53vh;
+    border-radius: 5px;
+    position: absolute;
+    top:400;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: all .8s;
+    z-index: 2;
+}
+.over .fa-brands
+{
+    padding: 0 4% ;
+    margin-top: 200px;
+    margin-left: 4px;
+    color: white;
+    font-size: large;
+    
+}
+.over span
+{
+    
+    margin-left: 20%;
+}
+
+.imgparent:hover .over
+{
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.fa-brands:hover
+{
+    color: rgb(255, 48, 91);
+}
+
+.aboutcontent
+{
+    width: 45%;
+    float: left;
+    padding-left: 3%;
+    vertical-align: middle;
+    line-height: .7cm;
+    
+}
+.aboutcontent h3 p
+{
+    margin: 7% 0;
+}
+.aboutcontent1 ,.aboutcontent2
+{
+    width: 50%;
+    float: left;
+    }
+.aboutcontent p
+{
+    color: rgb(85, 85, 85);
+    border-bottom: 1px dashed #999999;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    font-size:  16px ;
+    font-weight: 500;
+    line-height:25px
+}
+.aboutcontent h3
+{
+    font-size: 16px;
+    
+    font-weight: 500;
+}
+.aboutcontent1 span,.aboutcontent2 span
+{
+    color: rgb(85, 85, 85);
+    font-weight: 300;
+}
+.aboutcontent a
+{
+    color: white;
+    width: 25%;
+    border-radius: 5px;
+    float: left;
+    padding: 2%;
+    background-color: rgb(255, 48, 91);
+    margin-right:3%;
+    margin-top: 3%;
+    text-align: center;
+    transition: all .5s ;
+    
+}
+.aboutcontent a:hover
+{
+    background: #EC2403
+}
+.services i
+{
+    transition: all 1s;
+    margin-bottom: 10px;
+}
+.services
+{
+    width: 100%;
+    background-color: rgb(241, 241, 241);
+    padding: 100px  150px;
+    text-align: center;
+    overflow: hidden;
+
+    
+}
+.services h1
+{
+    font-size: 40;
+    
+}
+.services h3
+{
+    margin: 0;
+    font-size: 20px;
+    font-weight:600;
+    margin-bottom: 10%;
+    color: rgb(51, 51, 51);
+
+}
+.services p
+{
+    color:rgb(85, 85, 85) ;
+}
+.one,.two,.three,.foure
+{
+    width: 25%;
+    padding: 40px 15px;
+    float: left;
+    text-align: center;
+    margin-top: 2%;
+    padding: 75px 25px 55px 25px;
+    
+}
+.lin1
+{
+    width: 10%;
+    margin: auto;
+    padding: 2px;
+}
+.lin2
+{
+    width: 20%;
+    margin: auto;
+    padding: 2px;
+}
+.lin3
+{
+    width: 10%;
+    margin: auto;
+    padding: 2px;
+}
+hr
+{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgb(255, 48, 91);
+    padding: 0;
+}
+.one:hover,.two:hover,.three:hover,.foure:hover 
+{
+    background-color: white;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out 0s;
+    -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+}
+.one:hover i,.two:hover i,.three:hover i,.foure:hover i
+{
+    transform: scale(1.3);
+} 
+.Portifolio
+{
+    margin-top: 5%;
+    text-align: center;
+    overflow: hidden;
+    font-size: 18px;
+    font-weight: 600;
+}
+.Portifolio a
+{
+    color: #555;
+}
+.protp
+{
+    width: 25%;
+    margin: auto;
+    overflow: hidden;
+
+
+}
+.Portifolio p
+{
+    float: left;
+    padding: 10 ;
+    margin: 10% 0;
+    
+}
+.Portifolio span
+{
+    color: rgb(255, 48, 91)
+}
+.portpho
+{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.portpho img{
+    width: 100%;
+}
+.port1,.port2,.port3,.port4,.port5,.port6
+{
+    position: relative;
+    width: 33.333%;
+    height: 250px;
+    float: left;
+    padding: 30px;
+    margin-bottom: 70px;
+    overflow: hidden;
+}
+
+.num
+{
+    
+    background-color: rgb(241, 241, 241);
+    padding: 100px;
+    padding-bottom: 200px;
+    padding-left: 170px;
+
+}
+.num1,.num2,.num3,.num4
+{
+    width: 15%;
+    text-align: center;
+    float: left;
+    margin: 0 50px 50;
+    padding-top: 20px;
+}
+.num span
+{
+    margin-left: 100px;
+}
+.num1:hover ,.num2:hover ,.num3:hover ,.num4:hover
+{
+    background-color: white;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out 0s;
+    -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+}
+.num i
+{
+    transition: all 1s;
+}
+.num1:hover i ,.num2:hover i ,.num3:hover i ,.num4:hover i
+{
+    transform: scale(1.3);
+} 
+.num h3
+{
+    color: rgb(51, 51, 51);
+}
+.fa-solid 
+{
+    color: white;
+    margin-left: 3px;
+    
+}
+.fa-solid {
+    color: white;
+    margin-left: 3px;
+}
+.one .fa-regular 
+{
+    color: rgb(255, 48, 91);
+    margin-bottom: 5%;
+    font-size: xx-large;
+}
+.two .fa-regular
+{
+    color: rgb(255, 48, 91);
+    margin-bottom: 5%;
+    font-size: xx-large;
+}
+.three .fa-solid
+{
+    color: rgb(255, 48, 91);
+    margin-bottom: 5%;
+    font-size: xx-large;
+}
+.foure .fa-solid
+{
+    color: rgb(255, 48, 91);
+    margin-bottom: 5%;
+    font-size: xx-large;
+}
+.num .fa-solid
+{
+    color: rgb(255, 48, 91);
+    margin-bottom: 7%;
+    font-size: xx-large;
+}
+.feedback
+{
+    background-color:rgb(241, 241, 241) ;
+    width: 50%;
+    margin: 3% auto;
+    text-align: center;
+    overflow: hidden;
+    padding-bottom: 3%;
+    border-radius: 5px;
+    position: relative;
+
+}
+.feedback .triangle
+{
+    width: 0px;
+    height: 0;
+    border-left: 200px solid transparent;
+    border-right: 300px solid transparent;
+    border-top: 280px solid;
+    border-color: #ff305b rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    position: absolute;
+    left: -300px;
+}
+.clfeed
+{
+    margin-top: 5%;
+    text-align: center;
+    font-size:30px;
+    color: rgb(51, 51, 51);
+}
+.clfeed h2
+{
+    margin-bottom: 1%;
+} 
+.feedimg 
+{
+    width: 25%;
+    float: left;
+    text-align: left;
+    
+
+    
+}
+.feedimg img
+{
+    width: 60%;
+    border-radius: 50%;
+    margin-top: 15%;
+    margin-left: 40%;
+    position: relative;
+    top: 20px;
+    right: 20px;
+}
+.feedcontent .fa-solid
+{
+    color: rgb(119, 119, 119);
+    margin: 2% 0;
+} 
+.feedcontent
+{
+    width: 50%;
+    float: left;
+    text-align: left;
+    padding-top: 5%;
+}
+.feedcontent h3
+{
+    color: rgb(51, 51, 51);
+    font-size: 25px;
+    line-height:40px
+}
+.feedcontent p
+{
+    font-size: 16px;
+    line-height:25px;
+    color: rgb(119, 119, 119);
+}
+.star .fa-solid ,.fa-regular
+{
+    color: gold;
+}
+.ourh2
+{
+    text-align: center;
+    padding: 100 0 30 0;
+    font-size: 30;
+}
+.our
+{
+    margin: 100 0;
+    background: #f1f1f1;
+    padding: 0  200 50 ;
+    overflow: hidden;
+
+}
+.our1
+{
+    width: 30%;
+    background-color: white;
+    float: left;
+    margin: 15;
+   
+}
+.our1 a:hover
+{
+    color: #ff305b;
+}
+.our1 img
+{
+    max-width: 100%;
+}
+.our p
+{   
+    color: rgb(85, 85, 85);
+    margin:15 0;
+}
+.our a
+{
+    font-size: 25;
+    font-weight: 600;
+    color: rgb(51, 51, 51);
+    transition: all .5s;
+}
+.our1 iframe
+{
+    width: 100%;
+    height: 190px;
+}
+.caption2
+{
+    padding-left: 10;
+}
+.conth2
+{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 10 0 50 0;
+    font-size: 30;
+}
+.contform
+{
+    width: 60%;
+    margin: auto;
+    
+}
+.input1 input
+{
+    width: 40%;
+    margin-right: 30;
+    margin-left: 50;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    color: #555;
+    padding: 6px 12px;
+    font-size: 14px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+.input2
+{
+    margin-left: 50;
+    color: #555;
+    padding: 6px 12px;
+    font-size: 14px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: none;
+    width: 89%;
+    height: 40px;
+    transition: all .5s;
+}
+textarea
+{
+    margin-left: 50;
+    color: #555;
+    padding: 6px 12px;
+    font-size: 14px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: none;
+    width: 89%;
+    height: 100px;
+    transition: all .5s;
+}
+form button
+{
+    
+    margin: 10 0 100 50;
+    background-color: #ff305b;
+    border-color: #ff305b;
+    color: #ffffff;
+    opacity: 1;
+    border-radius: 4px;
+    
+    width: 15%;
+    height: 40px;
+    line-height: 38px;
+    text-transform: uppercase;
+    transition: all .5s;
+}
+
+button:hover 
+{
+    background-color: black;
+    border-color: black;
+}
+input:hover ,textarea:hover
+{
+   border: 1px solid #ff305b;
+}
+.parent3
+{
+    width: 100%;
+    height: 25vh;
+    background-color: rgb(51, 51, 51);
+    padding-top: 70px;
+    text-align: center;
+    
+}
+.icons
+{
+    
+    margin: auto;
+    color: white ;
+    text-align: center;
+    font-size: 20;
+    overflow: hidden;
+}
+.icons .fa-brands
+{
+    margin: 0 10px;
+}
+.parent3 p
+{
+    margin-top: 20px;
+    
+}
+.parent3 span
+{
+    
+    color: rgb(255, 48, 91);
+}
+.portover,.portover2,.portover3,.portover4,.portover5,.portover6
+{
+    background-color: rgba(0, 0, 0,0.5);
+
+    width: 85%;
+    
+    margin-left: 30px;
+    margin-top: 30px;
+    
+    opacity: 0;
+    transition: all .5s;
+    position: relative;
+}
+.portpho .fa-regular
+{
+    color: #ff305b;
+    position: absolute;
+    bottom: 10;
+    right: 20;
+    
+}
+.port1:hover .portover
+{
+    position: absolute;
+    top:0 ;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+}
+.port2:hover .portover2
+{
+    position: absolute;
+    top:0 ;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+}
+.port3:hover .portover3
+{
+    position: absolute;
+    top:0 ;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+}
+.port4:hover .portover4
+{
+    position: absolute;
+    top:0 ;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+}
+.port5:hover .portover5
+{
+    position: absolute;
+    top:0 ;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+}
+.port6:hover .portover6
+{
+    position: absolute;
+    top:0 ;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+}
